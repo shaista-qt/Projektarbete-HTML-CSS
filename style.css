@@ -95,3 +95,13 @@ footer a:hover {
         margin-top: 0;
     }
 }
+
+@media (min-width: 1024px) {
+    .headertitle {
+        font-size: large;
+    }
+    textarea {
+        width: 45rem;
+        height: 5rem;
+    }
+}
