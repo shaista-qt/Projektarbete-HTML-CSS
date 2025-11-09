@@ -5,6 +5,7 @@ Mitt projekt är en webbshop för **handbundna, specialdesignade journaler**. Ef
 ## Responsivitet
 * Media queries
 * Flexbox
+* Hover, fokus och transitions
 
 ## Begränsningar och förbättringsförslag
 * Göra shoppen i formulär form
@@ -20,3 +21,4 @@ Mitt projekt är en webbshop för **handbundna, specialdesignade journaler**. Ef
 
 ### Desktop
 <img src="desktop-screenshot.png" alt="isolated" width="800"/>
+
