@@ -13,3 +13,10 @@ Mitt projekt är en webbshop för **handbundna, specialdesignade journaler**. Ef
 * Att Beställ knappen fungerar
 * Ha en fil för delad CSS
 
+## Skärmdumpar
+
+### Mobile
+<img src="mobile-screenshot.png" alt="isolated" width="400"/>
+
+### Desktop
+<img src="desktop-screenshot.png" alt="isolated" width="800"/>
