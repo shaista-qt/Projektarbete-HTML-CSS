@@ -1,0 +1,97 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(216, 205, 205);
+    color: #4f2731;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f7f4;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 3em;
+}
+
+.headertitle {
+    text-decoration: none;
+    font-size: x-small;
+    font-family: "Georgia", serif;
+    color: #655d88;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: #655d88;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #986252;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d17d7d;
+}
+
+footer {
+    margin-top: auto;
+    background-color: rgb(231, 224, 222);
+    border-top: 2px solid #c8bdbd;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #4f2731;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,315 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designa din journal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(216, 205, 205);
+            color: rgb(67, 29, 18);
+            padding: 0;
+        }
+
+        .headertitle {
+            text-decoration: none;
+            font-size: x-small;
+            font-family: "Georgia", serif;
+            color: #655d88;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #f8f7f4;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 3em;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #655d88;
+            margin-right: 1rem;
+            margin-top: 2rem;
+        }
+
+        nav a:nth-child(1) {
+            color: #4f2731;
+        }
+
+        .designtitle {
+            display: flex;
+            justify-content: center;
+            font-size: small;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .välj {
+            font-size: medium;
+            padding-bottom: 1rem;
+        }
+
+        .designalternativf>div {
+            margin-bottom: 1rem;
+            padding: 2rem;
+        }
+
+        .designalternativ {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input[type="radio"] {
+            display: none;
+            /* Döljer själva radioknappen */
+        }
+
+        label {
+            cursor: pointer;
+            display: block;
+            padding: 0.75rem;
+            border: 2px solid #c8bdbd;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            transition: all 0.6s ease;
+            background-color: rgb(231, 224, 222);
+        }
+
+        label h3 {
+            font-size: 0.75rem;
+        }
+
+        /* Så att personen ser att man klickat på det valda alternativet */
+        input[type="radio"]:checked+label {
+            border-color: #4f2731;
+            background-color: #692b30;
+        }
+
+        input[type="radio"]:checked+label h3 {
+            color: white;
+        }
+
+
+        label:hover {
+            border-color: #999;
+        }
+
+        .gravering {
+            font-size: medium;
+            padding-bottom: 1rem;
+        }
+
+        textarea::placeholder {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(186, 158, 150);
+            font-size: 0, 5rem;
+        }
+
+        textarea {
+            width: 30rem;
+            height: 4rem;
+            border-radius: 5px;
+        }
+
+        button {
+            height: 3rem;
+            width: 6rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #2a3a6e;
+            font-size: medium;
+            font-weight: 800;
+        }
+
+        button:hover {
+            background-color: #cfdcee;
+            border: 1px solid rgb(67, 29, 18)
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: rgb(231, 224, 222);
+            border-top: 2px solid #c8bdbd;
+            text-align: center;
+            padding: 1.5rem 0;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.2rem 0;
+        }
+
+        footer a {
+            color: #4f2731;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 600px) {
+            header {
+                flex-direction: row;
+            }
+
+            nav {
+                flex-direction: row;
+            }
+
+            nav a {
+                margin-top: 0;
+            }
+
+            .designalternativ {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            label{
+                width: 150px;
+            }
+            /*ändra flexdirection till row när width är större än 600px 
+            så att items inte är i column, innan width 100% av parent*/
+        }
+
+        @media (min-width: 1024px) {
+            .headertitle {
+                font-size: large;
+            }
+            textarea {
+                width: 45rem;
+                height: 5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="headertitle">
+            <h1>Handbundet</h1>
+        </a>
+        <nav>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </header>
+    <div class="designtitle">
+        <h1>Designa din journal</h1>
+    </div>
+    <br><br>
+    <div class="designalternativf">
+        <div>
+            <h2 class="välj">Välj färg</h2>
+            <div class="designalternativ">
+                <input type="radio" id="blue" name="design" value="midnattsblå">
+                <label for="blue">
+                    <h3>Midnattsblå</h3>
+                </label>
+
+                <input type="radio" id="burgundy" name="design" value="burgundy">
+                <label for="burgundy">
+                    <h3>Burgundy</h3>
+                </label>
+
+                <input type="radio" id="green" name="design" value="skogsgrön">
+                <label for="green">
+                    <h3>Skogsgrön</h3>
+                </label>
+
+                <input type="radio" id="vanilj" name="design" value="vanilj">
+                <label for="vanilj">
+                    <h3>Vanilj</h3>
+                </label>
+
+                <input type="radio" id="choklad" name="design" value="choklad">
+                <label for="choklad">
+                    <h3>Choklad</h3>
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="välj">Välj storlek</h2>
+            <div class="designalternativ">
+                <input type="radio" id="a6" name="storlek" value="a6">
+                <label for="a6">
+                    <h3>A6</h3>
+                </label>
+
+                <input type="radio" id="a5" name="storlek" value="a5">
+                <label for="a5">
+                    <h3>A5</h3>
+                </label>
+
+                <input type="radio" id="a4" name="storlek" value="a4">
+                <label for="a4">
+                    <h3>A4</h3>
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="välj">Välj stygn</h2>
+            <div class="designalternativ">
+                <input type="radio" id="straight" name="stygn" value="rak">
+                <label for="straight">
+                    <h3>Raka stygn</h3>
+                </label>
+
+                <input type="radio" id="zigzag" name="stygn" value="zigzag">
+                <label for="zigzag">
+                    <h3>Zigzag</h3>
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="gravering">Gravering (valfritt)</h2>
+            <textarea id="engraving" name="engraving" maxlength="150"
+                placeholder="Skriv din text här (max 150 tecken)..."></textarea>
+        </div>
+
+        <div class="button-container">
+            <button class="button">Beställ</button>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2025 Handbundet</p>
+        <p><a href="contact.html">Kontakta mig</a>
+    </footer>
+
+
+</body>
+
+</html>
