@@ -41,6 +41,7 @@
         nav {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
         nav a {
@@ -69,15 +70,17 @@
             padding-bottom: 1rem;
         }
 
-        .designalternativf>div {
-            margin-bottom: 1rem;
-            padding: 2rem;
-        }
 
         .designalternativ {
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 1rem;
+        }
+
+        .designalternativ>div {
+            margin-bottom: 1rem;
+            width: 80%;
         }
 
         input[type="radio"] {
@@ -194,9 +197,15 @@
                 flex-wrap: wrap;
             }
 
-            label{
+            .designalternativ>div {
+                padding: 2rem;
+            }
+
+            label {
                 width: 150px;
             }
+        
+
             /*ändra flexdirection till row när width är större än 600px 
             så att items inte är i column, innan width 100% av parent*/
         }
@@ -205,6 +214,7 @@
             .headertitle {
                 font-size: large;
             }
+
             textarea {
                 width: 45rem;
                 height: 5rem;
@@ -227,7 +237,7 @@
         <h1>Designa din journal</h1>
     </div>
     <br><br>
-    <div class="designalternativf">
+    <div class="designalternativ">
         <div>
             <h2 class="välj">Välj färg</h2>
             <div class="designalternativ">
