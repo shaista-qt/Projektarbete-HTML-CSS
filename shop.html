@@ -6,6 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shaista Ahmadgul">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designa din journal</title>
     <style>
         * {
@@ -51,7 +53,7 @@
             margin-top: 2rem;
         }
 
-        nav a:nth-child(1) {
+        nav a:nth-child(1) { /* + bredare font nästa gång?*/
             color: #4f2731;
         }
 
@@ -78,7 +80,7 @@
             gap: 1rem;
         }
 
-        .designalternativ>div {
+        .designalternativ>div { /*targetar alla divar i designalternativ*/
             margin-bottom: 1rem;
             width: 80%;
         }
@@ -88,9 +90,8 @@
             /* Döljer själva radioknappen */
         }
 
-        label {
+        label { /*label för radio då checkbox är gömd*/
             cursor: pointer;
-            display: block;
             padding: 0.75rem;
             border: 2px solid #c8bdbd;
             border-radius: 10px;
@@ -110,13 +111,13 @@
             background-color: #692b30;
         }
 
-        input[type="radio"]:checked+label h3 {
+        input[type="radio"]:checked+label h3 { /*vit text när checked*/
             color: white;
         }
 
 
         label:hover {
-            border-color: #999;
+            border-color: #b48e8e;
         }
 
         .gravering {
@@ -155,7 +156,7 @@
             justify-content: center;
         }
 
-        footer {
+        footer { /*varför funkar inte auto på desktop?*/
             margin-top: auto;
             background-color: rgb(231, 224, 222);
             border-top: 2px solid #c8bdbd;

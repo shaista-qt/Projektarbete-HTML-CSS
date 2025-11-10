@@ -2,6 +2,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 0;
     margin: 0;
+    /*behövde nolla dessa för att resetta default padding och margin*/
 }
 
 body {
@@ -11,13 +12,13 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*mobile first*/
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; /*använder rem nästan överallt för bra genomgående skalning och lätttare underhåll och tillgänglighet*/
     background-color: #f8f7f4;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
 }
 
 .headertitle {
@@ -45,14 +46,14 @@ main {
 }
 
 .button {
-    display: inline-block;
+    display: inline-block; /*har bästa av inline och block i samma*/
     background-color: #986252;
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
     text-decoration: none;
     font-weight: 500;
-    transition: background 0.3s ease;
+    transition: background 0.4s ease;
 }
 
 .button:hover {
@@ -60,7 +61,7 @@ main {
 }
 
 footer {
-    margin-top: auto;
+    margin-top: auto; 
     background-color: rgb(231, 224, 222);
     border-top: 2px solid #c8bdbd;
     text-align: center;
@@ -80,7 +81,7 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /*pop up effekt istället? */
 }
 
 @media (min-width: 600px) {
@@ -95,14 +96,11 @@ footer a:hover {
     nav a {
         margin-top: 0;
     }
-}
+} /*hemsidan är för avskalad för större ändringar..?*/
 
 @media (min-width: 1024px) {
     .headertitle {
         font-size: large;
     }
-    textarea {
-        width: 45rem;
-        height: 5rem;
     }
-}
+
